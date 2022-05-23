@@ -1,0 +1,14 @@
+easyblock = 'Conda'
+
+name = 'prefect'
+version = '2.0b'
+
+homepage = 'https://www.prefect.io/'
+description = "The easiest way to build, run, and monitor data pipelines at scale"
+toolchain = SYSTEM
+
+environment_file = "%(namelower)s-%(version)s.yml"
+sources = ["%(namelower)s-%(version)s.yml"]
+sanity_check_commands = ['python --version']
+
+moduleclass = 'tools'
