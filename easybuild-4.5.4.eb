@@ -12,8 +12,8 @@ toolchain = SYSTEM
 requirements = "python=3.2 pip"
 
 builddependencies = [('Miniconda3', '4.9.2')]
+environment_file = "%(namelower)s-%(version)s.yml"
 
-postinstallcmds = ["source activate %%(installdir)s && pip install %(namelower)s-%(version)s" ]
 sanity_check_commands = ['python --version']
 
 moduleclass = 'tools'
