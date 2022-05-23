@@ -1,0 +1,9 @@
+name: easybuild
+channels:
+  - conda-forge
+dependencies:
+  - python=3.6
+  - nextflow=22.04.0
+  - pip
+  - pip:
+      - nf-core
