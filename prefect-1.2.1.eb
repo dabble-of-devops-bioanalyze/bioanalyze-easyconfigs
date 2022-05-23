@@ -1,0 +1,15 @@
+
+easyblock = 'Conda'
+
+name = 'prefect'
+version = '1.2.1'
+
+homepage = 'https://www.prefect.io/'
+description = "The easiest way to build, run, and monitor data pipelines at scale"
+toolchain = SYSTEM
+
+channels=['conda-forge', 'defaults']
+requirements = "%(namelower)s-%(version)s "
+sanity_check_commands = ['python --version']
+
+moduleclass = 'bio'

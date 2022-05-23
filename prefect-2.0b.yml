@@ -1,0 +1,8 @@
+name: prefect
+channels:
+  - conda-forge
+dependencies:
+  - python=3.9
+  - pip
+  - pip:
+      prefect==2.0b
