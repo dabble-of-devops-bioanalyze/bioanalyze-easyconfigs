@@ -1,0 +1,13 @@
+name: notebook
+channels:
+  - conda-forge
+dependencies:
+  - python=3.9
+  - pangeo-notebook=2022.05.10
+  - jupyter-rsession-proxy
+  - xarray
+  - pydantic
+  - deepchem=2.6.1
+  - pip
+  - pip:
+      - deepchem[pytorch]
