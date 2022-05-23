@@ -11,4 +11,4 @@ environment_file = "%(namelower)s-%(version)s.yml"
 sources = ["%(namelower)s-%(version)s.yml"]
 sanity_check_commands = ['python --version']
 
-moduleclass = 'bio'
+moduleclass = 'tools'
