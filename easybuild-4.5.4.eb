@@ -12,6 +12,7 @@ toolchain = SYSTEM
 requirements = "python=3.2 pip"
 
 builddependencies = [('Miniconda3', '4.9.2')]
+sources = ["%(namelower)s-%(version)s.yml"]
 environment_file = "%(namelower)s-%(version)s.yml"
 
 sanity_check_commands = ['python --version']

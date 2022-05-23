@@ -5,4 +5,4 @@ dependencies:
   - python=3.6
   - pip
   - pip:
-      - easybuild=4.5.4
+      - easybuild==4.5.4

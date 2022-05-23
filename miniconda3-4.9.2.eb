@@ -13,5 +13,6 @@ toolchain = SYSTEM
 source_urls = ['https://repo.anaconda.com/miniconda/']
 sources = ['%(name)s-py38_%(version)s-Linux-x86_64.sh']
 checksums = ['1314b90489f154602fd794accfc90446111514a5a72fe1f71ab83e07de9504a7']
+postinstallcmds = ["%(installdir)s/bin/conda install -y -c conda-forge mamba"]
 
 moduleclass = 'lang'
