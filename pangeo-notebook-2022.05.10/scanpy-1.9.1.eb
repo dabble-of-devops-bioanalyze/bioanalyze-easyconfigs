@@ -12,6 +12,6 @@ environment_file = "%(namelower)s-%(version)s.yml"
 sources = ["%(namelower)s-%(version)s.yml"]
 sanity_check_commands = ['python --version']
 
-builddependencies = [('Miniconda3', '4.9.2')]
+builddependencies = [('Miniconda3', '4.12.0')]
 
 moduleclass = 'bio'
