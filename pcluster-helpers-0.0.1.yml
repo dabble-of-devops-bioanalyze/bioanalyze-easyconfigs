@@ -1,0 +1,10 @@
+name: easybuild
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+dependencies:
+  - pip
+  - pip:
+      - nf-core
+      - aws-pcluster-helpers
