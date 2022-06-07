@@ -1,0 +1,20 @@
+
+easyblock = 'Conda'
+
+name = 'quilt'
+version = '3.0.0'
+
+homepage = 'https://quiltdata.com/'
+description = """Quilt is a versioned datahub for AWS"""
+
+toolchain = SYSTEM
+
+requirements = "python=3.6 pip"
+
+builddependencies = [('Miniconda3', '4.12.0')]
+sources = ["%(namelower)s-%(version)s.yml"]
+environment_file = "%(namelower)s-%(version)s.yml"
+
+sanity_check_commands = ['python --version']
+
+moduleclass = 'tools'

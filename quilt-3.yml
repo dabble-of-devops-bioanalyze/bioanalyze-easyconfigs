@@ -6,11 +6,10 @@ channels:
 dependencies:
   - pip
   - click
-  - pydantic
-  - rich-click
   - pandas
+  - pyarrow
+  - dask
   - pip:
-      - nf-core
       - devtools
       - colorlog
-      - aws-pcluster-helpers
+      - quilt3[catalog,pyarrow]
