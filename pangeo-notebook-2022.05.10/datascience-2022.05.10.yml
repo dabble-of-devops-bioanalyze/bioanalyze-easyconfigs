@@ -9,6 +9,7 @@ dependencies:
   - jupyter-rsession-proxy
   - nodejs
   - cookiecutter
+  - rich-click
   - ipython
   - click
   - rich-click
@@ -44,3 +45,4 @@ dependencies:
       - sphinx-click
       - prefect>=2.0b
       - devtools[pygments]
+      - bash_kernel
