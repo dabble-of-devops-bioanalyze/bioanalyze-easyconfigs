@@ -6,12 +6,12 @@ dependencies:
   - pangeo-notebook=2022.05.10
   - jupyter-rsession-proxy
   - jupyterhub
-  - bash_kernel
   - scikit-image
   - scikit-learn
   - r-irkernel
   - r-base
-  - r-tidyr
+  - r-tidyverse
+  - bash_kernel
   - nodejs
   - pip
   - pip:
