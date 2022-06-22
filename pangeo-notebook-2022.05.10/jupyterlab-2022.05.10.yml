@@ -5,6 +5,7 @@ dependencies:
   - python=3.9
   - pangeo-notebook=2022.05.10
   - jupyter-rsession-proxy
+  - jupyterhub
   - r-irkernel
   - r-base
   - r-tidyr
