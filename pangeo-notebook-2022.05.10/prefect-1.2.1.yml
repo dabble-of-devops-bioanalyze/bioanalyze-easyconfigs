@@ -8,3 +8,4 @@ dependencies:
   - pip
   - pip:
       - prefect==1.2.1
+      - prefect[dev]
