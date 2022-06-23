@@ -4,6 +4,7 @@ channels:
 dependencies:
   - python=3.9
   - pangeo-notebook=2022.05.10
+  - dask-gateway-server-jobqueue
   - jupyter-rsession-proxy
   - jupyterhub
   - scikit-image
