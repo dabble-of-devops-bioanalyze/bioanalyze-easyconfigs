@@ -13,5 +13,5 @@ dependencies:
       - nf-core
       - devtools
       - colorlog
-      - aws-pcluster-helpers
-      - aws-pcluster-slurm-spawner
+      - aws-pcluster-helpers>=1.0.8
+      - aws-pcluster-slurm-spawner>=1.0.8
