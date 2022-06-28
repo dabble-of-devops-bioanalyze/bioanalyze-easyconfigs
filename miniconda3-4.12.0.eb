@@ -15,10 +15,11 @@ source_urls = ['https://repo.anaconda.com/miniconda/']
 sources = ['%(name)s-py38_%(version)s-Linux-x86_64.sh']
 checksums = ['9986028a26f489f99af4398eac966d36']
 postinstallcmds = [
-    "%(installdir)s/bin/conda config --add channels defaults",
-    "%(installdir)s/bin/conda config --add channels conda-forge",
-    "%(installdir)s/bin/conda config --add channels bioconda",
     "%(installdir)s/bin/conda install -y -c conda-forge mamba || echo 'Unable to install mamba'"
+    "%(installdir)s/bin/conda config --add channels defaults",
+    "%(installdir)s/bin/conda config --add channels bioconda",
+    "%(installdir)s/bin/conda config --add channels conda-forge",
+    "%(installdir)s/bin/conda config --set channel_priority strict",
 ]
 
 moduleclass = 'lang'
