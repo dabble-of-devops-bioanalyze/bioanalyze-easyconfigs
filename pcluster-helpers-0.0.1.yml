@@ -8,6 +8,8 @@ dependencies:
   - click
   - pydantic
   - rich-click
+  - cython
+  - ipython
   - pandas
   - pip:
       - nf-core

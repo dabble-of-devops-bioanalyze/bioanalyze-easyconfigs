@@ -1,0 +1,31 @@
+easyblock = 'Conda'
+
+name = 'qupath'
+version = '0.3.2'
+
+homepage = 'https://qupath.readthedocs.io/'
+description = """
+QuPath is open source software for bioimage analysis.
+
+QuPath is often used for digital pathology applications because it offers a powerful set of tools for working with whole slide images - but it can be applied to lots of other kinds of image as well.
+"""
+toolchain = SYSTEM
+
+builddependencies = [('Miniconda3', '4.12.0')]
+
+environment_file = "%(namelower)s-%(version)s.yml"
+source_urls = ["https://github.com/qupath/qupath/releases/download/v0.3.2/QuPath-0.3.2-Linux.tar.xz"]
+sources = [
+    "QuPath-0.3.2-Linux.tar.xz",
+    "%(namelower)s-%(version)s.yml"
+]
+sanity_check_commands = ['python --version']
+
+postinstallcmds = [
+    "cd %(builddir)s && tar -xvf QuPath-0.3.2-Linux.tar.xz",
+    "cp -rf %(builddir)s/QuPath/bin/* %(installdir)s/bin/",
+    "chmod 777 %(installdir)s/bin/QuP*",
+    "cp -rf %(builddir)s/QuPath/lib/* %(installdir)s/lib/",
+]
+
+moduleclass = 'bio'
