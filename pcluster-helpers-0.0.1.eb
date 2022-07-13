@@ -9,17 +9,12 @@ description = """AWS Parallelcluster Helpers"""
 
 toolchain = SYSTEM
 
-requirements = "python=3.6 pip"
-
 builddependencies = [('Miniconda3', '4.12.0')]
 sources = ["%(namelower)s-%(version)s.yml",]
-source_urls = ["https://github.com/PySlurm/pyslurm/archive/refs/tags/v21.08.4.tar.gz"]
 environment_file = "%(namelower)s-%(version)s.yml"
 
 sanity_check_commands = ['python --version']
 
 postinstallcmds = [
-    "%(installdir)s/bin/python setup.py build --slurm=/opt/slurm",
-    "%(installdir)s/bin/python setup.py install",
 ]
 moduleclass = 'tools'
