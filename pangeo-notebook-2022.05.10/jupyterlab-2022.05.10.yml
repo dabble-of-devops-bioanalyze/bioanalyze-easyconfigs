@@ -19,3 +19,5 @@ dependencies:
       - batchspawner
       - aws-pcluster-helpers>=1.0.8
       - aws-pcluster-slurm-spawner>=1.0.8
+      - prefect==1
+      - prefect[dev]
