@@ -15,8 +15,6 @@ sources = ["%(namelower)s-%(version)s.yml", "v2.2.2.tar.gz"]
 sanity_check_commands = ['python --version']
 
 postinstallcmds = [
-    "%(installdir)s/bin/python setup.py build",
-    "%(installdir)s/bin/python setup.py install",
 ]
 
 moduleclass = 'bio'

@@ -14,8 +14,6 @@ Its fluent DSL simplifies the implementation and the deployment of complex paral
 
 toolchain = SYSTEM
 
-requirements = "python=3.2 pip"
-
 builddependencies = [('Miniconda3', '4.12.0')]
 sources = ["%(namelower)s-%(version)s.yml"]
 environment_file = "%(namelower)s-%(version)s.yml"
