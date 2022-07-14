@@ -8,6 +8,7 @@ dependencies:
   # CUDA Version 11.0.228
   - python=3.7
   - ipykernel
+  - ipywidgets
   - papermill
   - ipython
   - hhsuite=3.3.0
@@ -26,14 +27,11 @@ dependencies:
   - dm-haiku
   - dm-tree
   - immutabledict
-  - ml-collections
   - numpy
   - pandas
+  - google-colab
   - scipy
+  - tqdm
   - pip
   - pip:
-      - tensorflow
-      - colabfold
-      # which one?
-#      - "jax[cuda]>=0.3.8,<0.4"
-#      - alphafold==2.0.0
+      - dash-bio==1.0.1
