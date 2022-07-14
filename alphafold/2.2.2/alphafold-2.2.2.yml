@@ -30,8 +30,11 @@ dependencies:
   - numpy
   - pandas
   - google-colab
+  - python-graphviz
   - scipy
   - tqdm
   - pip
   - pip:
       - dash-bio==1.0.1
+      - prefect=1
+      - prefect[dev, all_extras]
