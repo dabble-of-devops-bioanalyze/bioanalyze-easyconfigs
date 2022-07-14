@@ -1,6 +1,7 @@
 name: alphafold
 channels:
   - conda-forge
+  - plotly
   - bioconda
   - defaults
 dependencies:
@@ -33,6 +34,7 @@ dependencies:
   - python-graphviz
   - scipy
   - tqdm
+  - jupyter-dash
   - pip
   - pip:
       - dash-bio==1.0.1
