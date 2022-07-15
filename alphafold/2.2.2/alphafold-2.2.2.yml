@@ -35,8 +35,8 @@ dependencies:
   - scipy
   - tqdm
   - jupyter-dash
+  - prefect=1
   - pip
   - pip:
       - dash-bio==1.0.1
-      - prefect=1
-      - prefect[dev, all_extras]
+      - prefect[dev, viz, aws]
