@@ -7,8 +7,10 @@ dependencies:
   - dask-gateway-server-jobqueue
   - jupyter-rsession-proxy
   - jupyterhub
+  - jupyterlab
   - scikit-image
   - scikit-learn
+  - seaborn
   - r-irkernel
   - r-base
   - r-tidyverse
@@ -17,7 +19,8 @@ dependencies:
   - pip
   - pip:
       - batchspawner
-      - aws-pcluster-helpers>=1.0.8
-      - aws-pcluster-slurm-spawner>=1.0.8
+      - aws-pcluster-helpers
+      - aws-pcluster-slurm-spawner
+      - aws-pcluster-dask-gateway
       - prefect==1
-      - prefect[dev]
+      - prefect[dev, viz, aws]
