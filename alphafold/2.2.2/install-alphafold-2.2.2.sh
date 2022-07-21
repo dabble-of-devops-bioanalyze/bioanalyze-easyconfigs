@@ -22,3 +22,5 @@ pip install -q "jax[cuda11_cudnn805]>=0.3.8,<0.4" -f https://storage.googleapis.
 pushd ${INSTALLDIR}/lib/python3.7/site-packages/ && \
     patch -p0 < ${BUILDIR}/alphafold-2.2.2/docker/openmm.patch && \
     popd
+
+exit 0

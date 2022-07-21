@@ -22,5 +22,4 @@ dependencies:
       - aws-pcluster-helpers
       - aws-pcluster-slurm-spawner
       - aws-pcluster-dask-gateway
-      - prefect==1
-      - prefect[dev, viz, aws]
+      - prefect[dev,viz,aws]==1
