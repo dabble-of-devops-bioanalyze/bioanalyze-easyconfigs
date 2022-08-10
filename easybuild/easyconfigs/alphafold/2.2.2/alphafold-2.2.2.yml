@@ -39,4 +39,4 @@ dependencies:
   - pip
   - pip:
       - dash-bio==1.0.1
-      - prefect[dev, viz, aws]
+      - prefect[dev,viz,aws]

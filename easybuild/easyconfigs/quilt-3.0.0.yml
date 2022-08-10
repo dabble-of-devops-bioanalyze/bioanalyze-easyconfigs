@@ -9,6 +9,7 @@ dependencies:
   - pandas
   - pyarrow
   - dask
+  - nodejs
   - pip:
       - devtools
       - colorlog

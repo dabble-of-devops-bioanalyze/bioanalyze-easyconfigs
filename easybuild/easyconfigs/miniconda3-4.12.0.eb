@@ -11,11 +11,16 @@ description = """Miniconda is a free minimal installer for conda. It is a small,
 
 toolchain = SYSTEM
 
-source_urls = ['https://repo.anaconda.com/miniconda/']
-sources = ['%(name)s-py38_%(version)s-Linux-x86_64.sh']
-checksums = ['9986028a26f489f99af4398eac966d36']
+#source_urls = ['https://repo.anaconda.com/miniconda/']
+#sources = ['%(name)s-py38_%(version)s-Linux-x86_64.sh']
+#checksums = ['9986028a26f489f99af4398eac966d36']
+
+# switching to mambaforge
+source_urls = ['https://github.com/conda-forge/miniforge/releases/download/4.12.0-3/']
+sources = ['Mambaforge-4.12.0-3-Linux-x86_64.sh']
+checksums = ['93d481e4f12dce9f2ffe46904dc8cf88485c7b27fc4d18dd8e900e2c3ab83f80']
+
 postinstallcmds = [
-    "%(installdir)s/bin/conda install -y -c conda-forge mamba || echo 'Unable to install mamba'"
     "%(installdir)s/bin/conda config --add channels defaults",
     "%(installdir)s/bin/conda config --add channels bioconda",
     "%(installdir)s/bin/conda config --add channels conda-forge",
