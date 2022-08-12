@@ -1,4 +1,4 @@
-name: easybuild
+name: quilt
 channels:
   - conda-forge
   - bioconda

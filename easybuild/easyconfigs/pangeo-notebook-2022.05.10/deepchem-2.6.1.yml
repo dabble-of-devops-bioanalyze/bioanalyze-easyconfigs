@@ -1,4 +1,4 @@
-name: notebook
+name: deepchem
 channels:
   - conda-forge
 dependencies:
@@ -8,6 +8,7 @@ dependencies:
   - xarray
   - pydantic
   - deepchem=2.6.1
+  - pytorch
   - pip
   - pip:
       - deepchem[pytorch]

@@ -1,4 +1,4 @@
-name: notebook
+name: jupyterlab
 channels:
   - conda-forge
 dependencies:
@@ -22,4 +22,4 @@ dependencies:
       - aws-pcluster-helpers
       - aws-pcluster-slurm-spawner
       - aws-pcluster-dask-gateway
-      - prefect[dev,viz,aws]==1
+      - prefect[dev,viz,aws]>=1,<2

@@ -35,8 +35,9 @@ dependencies:
   - scipy
   - tqdm
   - jupyter-dash
-  - prefect=1
+  - nglview
+  - prefect>=1,<2
   - pip
   - pip:
       - dash-bio==1.0.1
-      - prefect[dev,viz,aws]
+      - prefect[dev,viz,aws]>=1,<2
