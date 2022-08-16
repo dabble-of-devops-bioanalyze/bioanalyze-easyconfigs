@@ -18,7 +18,7 @@ postinstallcmds = [
 export INSTALLDIR=%(installdir)s && \
 export BUILDDIR=%(builddir)s && \
 chmod 777 *sh && \
-bash ./install-install-%(namelower)s-%(version)s.sh
+bash ./install-%(namelower)s-%(version)s.sh
 """
 ]
 
