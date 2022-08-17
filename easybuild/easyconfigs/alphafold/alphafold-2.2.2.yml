@@ -39,5 +39,5 @@ dependencies:
   - prefect>=2
   - pip
   - pip:
-      - dash-bio==1.0.1
+      - dash-bio
       - prefect[dev,viz,aws]>=2
