@@ -1,6 +1,6 @@
 easyblock = 'Conda'
 
-name = 'alphafold-cpu'
+name = 'alphafold'
 version = '2.2.2'
 
 homepage = 'https://alphafold.ebi.ac.uk/'
