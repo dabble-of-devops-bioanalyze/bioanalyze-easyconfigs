@@ -39,8 +39,8 @@ dependencies:
   - prefect>=2
   - prefect-dask
   - dask
-  - dask-gateway
   - dask-gateway-server-jobqueue
+  - dask-gateway
   - colorlog
   - pip
   - pip:
