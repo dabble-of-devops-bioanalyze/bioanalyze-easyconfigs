@@ -36,14 +36,14 @@ dependencies:
   - tqdm
   - jupyter-dash
   - nglview
-  - prefect>=2
   - dask
   - dask-gateway-server-jobqueue
   - dask-gateway
   - colorlog
   - pip
   - pip:
+      - aws-pcluster-dask-gateway
       - dash-bio
       - prefect[dev,viz,aws]>=2
+      - prefect>=2
       - prefect-dask
-      - aws-pcluster-dask-gateway
