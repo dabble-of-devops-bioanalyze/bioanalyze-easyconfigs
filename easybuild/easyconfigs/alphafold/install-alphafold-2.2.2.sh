@@ -22,9 +22,6 @@ ${INSTALLDIR}/bin/pip3 install --upgrade \
 ${INSTALLDIR}/bin/pip3 install --no-dependencies ./
 ${INSTALLDIR}/bin/pip install -q --no-warn-conflicts "colabfold[alphafold-minus-jax] @ git+https://github.com/sokrypton/ColabFold"
 
-# install prefect again? typing gets messed up somewhere
-${INSTALLDIR}/bin/pip install --force --upgrade prefect>=2
-
   # high risk high gain
 #${INSTALLDIR}/bin/pip install -q "jax[cuda11_cudnn805]>=0.3.8,<0.4" -f https://storage.googleapis.com/jax-releases/jax_releases.html
 #${INSTALLDIR}/bin/pip install --force "jax[cuda11_cudnn805]>=0.3,<0.4" -f https://storage.googleapis.com/jax-releases/jax_cuda_releases.html
