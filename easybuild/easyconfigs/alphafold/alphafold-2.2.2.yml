@@ -42,6 +42,7 @@ dependencies:
   - colorlog
   - pip
   - pip:
+      - funcy
       - aws-pcluster-dask-gateway
       - dash-bio
       - prefect[dev,viz,aws]>=2
