@@ -11,9 +11,6 @@ dependencies:
   - scikit-image
   - scikit-learn
   - seaborn
-  - r-irkernel
-  - r-base
-  - r-tidyverse
   - bash_kernel
   - nodejs
   - pip
@@ -22,4 +19,4 @@ dependencies:
       - aws-pcluster-helpers
       - aws-pcluster-slurm-spawner
       - aws-pcluster-dask-gateway
-      - prefect[dev,viz,aws]>=1,<2
+      - prefect[dev,viz,aws]>=2
