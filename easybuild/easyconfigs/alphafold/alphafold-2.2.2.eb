@@ -17,7 +17,7 @@ postinstallcmds = [
 """
 export INSTALLDIR=%(installdir)s && \
 export BUILDDIR=%(builddir)s && \
-${INSTALLDIR}/bin/pip 3 install -r %(namelower)s-%(version)s-requirements.txt && \
+${INSTALLDIR}/bin/pip install -r %(namelower)s-%(version)s-requirements.txt && \
 chmod 777 *sh && \
 bash ./install-%(namelower)s-%(version)s.sh
 """
