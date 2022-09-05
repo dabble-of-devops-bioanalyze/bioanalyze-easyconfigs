@@ -40,11 +40,12 @@ dependencies:
   - dask-gateway-server-jobqueue
   - dask-gateway
   - colorlog
+  - prefect>=2
   - pip
   - pip:
       - funcy
       - aws-pcluster-dask-gateway
       - dash-bio
-      - prefect[dev,viz,aws]>=2
+      - prefect[dev,viz,aws]
       - prefect>=2
       - prefect-dask

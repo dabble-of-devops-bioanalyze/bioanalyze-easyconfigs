@@ -11,7 +11,7 @@ wget $ALPHAFOLD
 tar -xvf v2.2.2.tar.gz
 
 cd alphafold-2.2.2
-#${INSTALLDIR}/bin/pip3 install -r ./requirements.txt
+${INSTALLDIR}/bin/pip3 install -r ./requirements.txt
 
 ${INSTALLDIR}/bin/pip3 install --upgrade \
       jax==0.2.14 \
@@ -20,7 +20,7 @@ ${INSTALLDIR}/bin/pip3 install --upgrade \
 
 # Run setup.py to install only AlphaFold.
 ${INSTALLDIR}/bin/pip3 install --no-dependencies ./
-${INSTALLDIR}/bin/pip install -q --no-warn-conflicts "colabfold[alphafold-minus-jax] @ git+https://github.com/sokrypton/ColabFold"
+${INSTALLDIR}/bin/pip3 install -q --no-warn-conflicts "colabfold[alphafold-minus-jax] @ git+https://github.com/sokrypton/ColabFold"
 
   # high risk high gain
 #${INSTALLDIR}/bin/pip install -q "jax[cuda11_cudnn805]>=0.3.8,<0.4" -f https://storage.googleapis.com/jax-releases/jax_releases.html
