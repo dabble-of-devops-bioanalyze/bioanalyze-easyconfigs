@@ -1,18 +1,20 @@
-name: jupyterlab
+name: gromacs-helpers
 channels:
   - conda-forge
+  - bioconda
+  - defaults
 dependencies:
-  - python=3.9
-  - pangeo-notebook=2022.05.10
   - dask-gateway-server-jobqueue
-  - jupyter-rsession-proxy
-  - jupyterhub
-  - jupyterlab
-  - scikit-image
-  - scikit-learn
+  - click
+  - python=3.9
+  - pydantic
+  - rich-click
+  - cython
+  - ipython
+  - ipykernel
+  - pandas
   - seaborn
   - bash_kernel
-  - nodejs
   - prefect>=2
   - pip
   - pip:
@@ -23,3 +25,4 @@ dependencies:
       - prefect>=2
       - prefect-aws
       - prefect-shell
+      - prefect-dask

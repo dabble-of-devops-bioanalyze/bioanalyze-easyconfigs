@@ -1,3 +1,3 @@
-FROM jupyter/datascience-notebook
+FROM condaforge/mambaforge
 
-RUN pip install easybuild==4.2.1
+RUN bash -c "conda install -y notebook ipython pip prefect>=2; pip install easybuild>=4,<5 prefect-aws"

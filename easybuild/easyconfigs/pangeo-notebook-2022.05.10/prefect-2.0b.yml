@@ -11,3 +11,11 @@ dependencies:
       - aws-pcluster-helpers
       - aws-pcluster-slurm-spawner
       - aws-pcluster-dask-gateway
+      - batchspawner
+      - aws-pcluster-helpers
+      - aws-pcluster-slurm-spawner
+      - aws-pcluster-dask-gateway
+      - prefect>=2
+      - prefect-aws
+      - prefect-shell
+      - prefect-dask

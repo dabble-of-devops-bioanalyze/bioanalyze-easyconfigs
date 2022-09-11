@@ -46,6 +46,7 @@ dependencies:
       - funcy
       - aws-pcluster-dask-gateway
       - dash-bio
-      - prefect[dev,viz,aws]
       - prefect>=2
       - prefect-dask
+      - prefect-shell
+      - prefect-aws
