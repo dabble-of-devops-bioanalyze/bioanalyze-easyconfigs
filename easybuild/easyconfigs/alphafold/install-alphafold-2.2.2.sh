@@ -11,6 +11,7 @@ wget $ALPHAFOLD
 tar -xvf v2.2.2.tar.gz
 
 cd alphafold-2.2.2
+${INSTALLDIR}/bin/pip3 install -r ./alphafold-2.2.2-requirements.txt
 ${INSTALLDIR}/bin/pip3 install -r ./requirements.txt
 
 ${INSTALLDIR}/bin/pip3 install --upgrade \
