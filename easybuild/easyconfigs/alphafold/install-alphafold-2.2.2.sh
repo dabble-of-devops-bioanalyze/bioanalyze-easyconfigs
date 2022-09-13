@@ -35,9 +35,4 @@ pushd ${INSTALLDIR}/lib/python3.7/site-packages/ && \
     patch -p0 < ${CURDIR}/alphafold-2.2.2/docker/openmm.patch && \
     popd
 
-${INSTALLDIR}/bin/pip install prefect>=2 \
-  prefect-aws \
-  prefect-shell \
-  prefect-dask
-
 exit 0
