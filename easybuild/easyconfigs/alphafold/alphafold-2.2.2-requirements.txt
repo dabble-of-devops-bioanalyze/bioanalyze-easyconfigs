@@ -12,7 +12,3 @@ scipy==1.7.0
 tensorflow-cpu>=2.5.0
 aws-pcluster-dask-gateway
 dash-bio
-prefect>=2
-prefect-aws
-prefect-shell
-prefect-dask

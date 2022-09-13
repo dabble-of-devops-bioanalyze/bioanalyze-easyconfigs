@@ -11,8 +11,8 @@ wget $ALPHAFOLD
 tar -xvf v2.2.2.tar.gz
 
 cd alphafold-2.2.2
-${INSTALLDIR}/bin/pip3 install -r ./alphafold-2.2.2-requirements.txt
-#${INSTALLDIR}/bin/pip3 install -r ./requirements.txt
+#${INSTALLDIR}/bin/pip3 install -r ./alphafold-2.2.2-requirements.txt
+${INSTALLDIR}/bin/pip3 install -r ./requirements.txt
 
 ${INSTALLDIR}/bin/pip3 install --upgrade \
       jax==0.2.14 \
@@ -32,5 +32,10 @@ ${INSTALLDIR}/bin/pip3 install --no-dependencies ./
 pushd ${INSTALLDIR}/lib/python3.7/site-packages/ && \
     patch -p0 < ${CURDIR}/alphafold-2.2.2/docker/openmm.patch && \
     popd
+
+${INSTALLDIR}/bin/pip install prefect>=2 \
+  prefect-aws \
+  prefect-shell \
+  prefect-dask
 
 exit 0
