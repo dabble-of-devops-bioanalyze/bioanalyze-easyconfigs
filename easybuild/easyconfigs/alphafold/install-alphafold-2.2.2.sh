@@ -21,6 +21,7 @@ ${INSTALLDIR}/bin/pip3 install --upgrade \
 
 # Run setup.py to install only AlphaFold.
 ${INSTALLDIR}/bin/pip3 install --no-dependencies ./
+${INSTALLDIR}/bin/pip3 install pydantic rich-click click
 # this messes up the alphafold 2.2.2 installation
 # need to find out which versions of alphafold are pinned to which versions of colabfold
 #${INSTALLDIR}/bin/pip3 install -q --no-warn-conflicts "colabfold[alphafold-minus-jax] @ git+https://github.com/sokrypton/ColabFold"
