@@ -9,3 +9,9 @@ dependencies:
   - pip:
       - prefect==1.2.1
       - prefect[dev,aws,viz]
+      - aws-pcluster-helpers
+      - aws-pcluster-slurm-spawner
+      - aws-pcluster-dask-gateway
+      - aws-pcluster-helpers
+      - aws-pcluster-slurm-spawner
+      - aws-pcluster-dask-gateway

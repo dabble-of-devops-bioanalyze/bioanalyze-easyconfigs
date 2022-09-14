@@ -3,15 +3,12 @@ channels:
   - conda-forge
 dependencies:
   - python=3.9
-  - pangeo-notebook=2022.05.10
-  - jupyter-rsession-proxy
   - prefect>=2
   - pip
   - pip:
       - aws-pcluster-helpers
       - aws-pcluster-slurm-spawner
       - aws-pcluster-dask-gateway
-      - batchspawner
       - aws-pcluster-helpers
       - aws-pcluster-slurm-spawner
       - aws-pcluster-dask-gateway
