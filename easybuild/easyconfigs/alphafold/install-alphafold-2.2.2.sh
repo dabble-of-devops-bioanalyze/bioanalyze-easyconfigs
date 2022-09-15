@@ -23,15 +23,9 @@ ${INSTALLDIR}/bin/pip3 install --upgrade \
 ${INSTALLDIR}/bin/pip3 install --no-dependencies ./
 ${INSTALLDIR}/bin/pip3 install pydantic rich-click click
 # this messes up the alphafold 2.2.2 installation
-# need to find out which versions of alphafold are pinned to which versions of colabfold
-#${INSTALLDIR}/bin/pip3 install -q --no-warn-conflicts "colabfold[alphafold-minus-jax] @ git+https://github.com/sokrypton/ColabFold"
 
 wget -q -P ${INSTALLDIR}/lib/python3.7/site-packages/lib/python3.7/site-packages/alphafold/common/ \
   https://git.scicore.unibas.ch/schwede/openstructure/-/raw/7102c63615b64735c4941278d92b554ec94415f8/modules/mol/alg/src/stereo_chemical_props.txt
-  # high risk high gain
-#${INSTALLDIR}/bin/pip install -q "jax[cuda11_cudnn805]>=0.3.8,<0.4" -f https://storage.googleapis.com/jax-releases/jax_releases.html
-#${INSTALLDIR}/bin/pip install --force "jax[cuda11_cudnn805]>=0.3,<0.4" -f https://storage.googleapis.com/jax-releases/jax_cuda_releases.html
-
 
 # Apply OpenMM patch.
 pushd ${INSTALLDIR}/lib/python3.7/site-packages/ && \
