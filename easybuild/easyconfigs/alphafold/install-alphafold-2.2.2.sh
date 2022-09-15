@@ -21,7 +21,7 @@ ${INSTALLDIR}/bin/pip3 install --upgrade \
 
 # Run setup.py to install only AlphaFold.
 ${INSTALLDIR}/bin/pip3 install --no-dependencies ./
-${INSTALLDIR}/bin/pip3 install pydantic rich-click click
+${INSTALLDIR}/bin/pip3 install pydantic rich-click click "typer[all]"
 # this messes up the alphafold 2.2.2 installation
 
 wget -q -P ${INSTALLDIR}/lib/python3.7/site-packages/lib/python3.7/site-packages/alphafold/common/ \
