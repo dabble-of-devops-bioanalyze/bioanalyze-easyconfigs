@@ -4,6 +4,7 @@ channels:
 dependencies:
   - python=3.9
   - prefect>=2
+  - boto3
   - pip
   - pip:
       - aws-pcluster-helpers
