@@ -9,9 +9,6 @@ dependencies:
       - aws-pcluster-helpers
       - aws-pcluster-slurm-spawner
       - aws-pcluster-dask-gateway
-      - aws-pcluster-helpers
-      - aws-pcluster-slurm-spawner
-      - aws-pcluster-dask-gateway
       - s3fs
       - prefect>=2
       - prefect-aws
