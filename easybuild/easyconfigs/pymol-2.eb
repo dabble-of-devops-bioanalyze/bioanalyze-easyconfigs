@@ -1,0 +1,18 @@
+
+easyblock = 'Conda'
+
+name = 'pymol'
+version = '2'
+
+homepage = 'https://pymol.org/2/'
+description = """PyMOL is a user-sponsored molecular visualization system on an open-source foundation, maintained and distributed by Schrödinger."""
+
+toolchain = SYSTEM
+
+builddependencies = [('Miniconda3', '4.12.0')]
+sources = ["%(namelower)s-%(version)s.yml"]
+environment_file = "%(namelower)s-%(version)s.yml"
+
+sanity_check_commands = ['python --version']
+
+moduleclass = 'bio'

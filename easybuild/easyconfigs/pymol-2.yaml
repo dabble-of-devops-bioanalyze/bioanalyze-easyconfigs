@@ -1,0 +1,12 @@
+name: easybuild
+channels:
+  - schrodinger
+  - bioconda
+  - conda-forge
+dependencies:
+  - python=3.9
+  - pymol-bundle>=2 
+  - ipython
+  - ipykernel
+  - bash_kernel
+  - pip
