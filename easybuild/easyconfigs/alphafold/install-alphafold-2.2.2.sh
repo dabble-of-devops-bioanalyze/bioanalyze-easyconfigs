@@ -5,14 +5,14 @@ echo "Installing alphafold to: ${INSTALLDIR}"
 env |grep EASY
 
 CURDIR=$(pwd)
-ALPHAFOLD="https://github.com/deepmind/alphafold/archive/refs/tags/v2.2.2.tar.gz"
-
-wget $ALPHAFOLD
-tar -xvf v2.2.2.tar.gz
-
-cd alphafold-2.2.2
-#${INSTALLDIR}/bin/pip3 install -r ./alphafold-2.2.2-requirements.txt
-${INSTALLDIR}/bin/pip3 install -r ./requirements.txt
+#ALPHAFOLD="https://github.com/deepmind/alphafold/archive/refs/tags/v2.2.2.tar.gz"
+#
+#wget $ALPHAFOLD
+#tar -xvf v2.2.2.tar.gz
+#
+#cd alphafold-2.2.2
+##${INSTALLDIR}/bin/pip3 install -r ./alphafold-2.2.2-requirements.txt
+#${INSTALLDIR}/bin/pip3 install -r ./requirements.txt
 
 ${INSTALLDIR}/bin/pip3 install --upgrade \
       jax==0.2.14 \
