@@ -42,6 +42,7 @@ dependencies:
   - colorlog
   - typer
   - rich
+  - pydantic
   - pip
   - pip:
       - funcy
