@@ -48,5 +48,4 @@ dependencies:
   - pip:
       - funcy
       - aws-pcluster-dask-gateway
-      - git://github.com/trv-datasci/alphafold-cli.git
-      - git://github.com/deepmind/alphafold@2.2.2
+      - https://github.com/deepmind/alphafold/archive/refs/tags/v2.2.2.tar.gz
