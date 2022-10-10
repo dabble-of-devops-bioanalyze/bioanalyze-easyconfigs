@@ -17,6 +17,7 @@ dependencies:
   - pip
   - pip:
       - batchspawner
+      - aws-parallelcluster==3.2.1
       - aws-pcluster-helpers
       - aws-pcluster-slurm-spawner
       - aws-pcluster-dask-gateway
