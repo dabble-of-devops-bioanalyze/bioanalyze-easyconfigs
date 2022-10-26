@@ -14,6 +14,9 @@ dependencies:
   - bash_kernel
   - nodejs
   - prefect>=2
+  - cdsdashboards
+  - cdsdashboards-singleuser
+  - voila
   - pip
   - pip:
       - batchspawner
@@ -24,3 +27,4 @@ dependencies:
       - prefect>=2
       - prefect-aws
       - prefect-shell
+      - jupyter-containds
