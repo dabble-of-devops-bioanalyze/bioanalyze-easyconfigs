@@ -1,0 +1,13 @@
+name: deepchem-torch
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+dependencies:
+  - python=3.9
+  - ipython
+  - ipykernel
+  - deepchem
+  - pip
+  - pip:
+      - deepchem[jax]
