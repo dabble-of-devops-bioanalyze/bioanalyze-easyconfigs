@@ -24,6 +24,8 @@ dependencies:
       - aws-pcluster-helpers
       - aws-pcluster-slurm-spawner
       - aws-pcluster-dask-gateway
+      - jupyter-dcv-proxy
+      - jupyter-vscode-proxy
       - prefect>=2
       - prefect-aws
       - prefect-shell
