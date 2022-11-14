@@ -21,7 +21,7 @@ dependencies:
   - ambertools
   - parallel
   - pymbar==3.0.5
-  - alchemblyb=0.6.0
+  - alchemlyb=0.6.0
   - rdkit=2019.09
   - networkx>=2
   - openbabel>=3
