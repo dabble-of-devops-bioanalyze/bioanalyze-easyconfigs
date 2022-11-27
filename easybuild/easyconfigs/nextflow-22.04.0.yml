@@ -1,4 +1,4 @@
-name: easybuild
+name: nextflow
 channels:
   - conda-forge
   - bioconda
