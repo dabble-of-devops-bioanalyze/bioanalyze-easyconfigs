@@ -1,7 +1,7 @@
 easyblock = 'PackedBinary'
 
 name = 'Schrodinger'
-version = '2022-4'
+version = '2022-3'
 
 homepage = 'https://www.schrodinger.com/'
 description = """ Schrodinger aims to provide integrated software solutions and services
