@@ -1,0 +1,16 @@
+easyblock = 'Conda'
+
+name = 'openbabel'
+version = '3.1.1'
+
+homepage = 'https://openbabel.org/'
+description = "A chemical toolbox designed to speak the many languages of chemical data."
+toolchain = SYSTEM
+
+builddependencies = [('Miniconda3', '4.12.0')]
+
+environment_file = "%(namelower)s-%(version)s.yml"
+sources = ["%(namelower)s-%(version)s.yml"]
+sanity_check_commands = ['python --version']
+
+moduleclass = 'bio'
