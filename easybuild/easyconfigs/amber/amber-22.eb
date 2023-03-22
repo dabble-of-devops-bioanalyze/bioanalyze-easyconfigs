@@ -1,0 +1,52 @@
+easyblock = 'Conda'
+
+name = 'Amber'
+local_amber_ver = 22
+local_ambertools_ver = 22
+# Patch levels from https://ambermd.org/AmberPatches.php and https://ambermd.org/ATPatches.php
+patchlevels = (3, 0)  # (AmberTools, Amber)
+version = '%s.%s' % (local_amber_ver, patchlevels[1])
+versionsuffix = '-AmberTools-%s.%s' % (local_ambertools_ver, patchlevels[0])
+
+homepage = 'https://ambermd.org/amber.html'
+description = """Amber (originally Assisted Model Building with Energy Refinement) is software for performing
+ molecular dynamics and structure prediction."""
+
+#toolchain = {'name': 'foss', 'version': '2021b'}
+#toolchainopts = {'usempi': True, 'openmp': True}
+
+sources = [
+    '%%(name)s%s.tar.bz2' % local_amber_ver,
+    'AmberTools%s.tar.bz2' % local_ambertools_ver,
+]
+patches = [
+]
+checksums = [
+    '3c887ccbad690fc76ff0b120a3448eae023c08e76582aac07900d4a9708ebd16',  # Amber22.tar.bz2
+    '1571d4e0f7d45b2a71dce5999fa875aea8c90ee219eb218d7916bf30ea229121',  # AmberTools22.tar.bz2
+]
+
+builddependencies = [
+]
+
+dependencies = [
+]
+
+# All tests are expected to pass or be skipped
+#runtest = True
+
+#static = False
+
+sanity_check_commands = ['python --version']
+
+postinstallcmds = [
+"""
+export INSTALLDIR=%(installdir)s && \
+export BUILDDIR=%(builddir)s && \
+export PREFIX=%(prefix)s && \
+chmod 777 *sh && \
+bash ./install-%(namelower)s-%(version)s.sh
+"""
+]
+
+moduleclass = 'chem'
