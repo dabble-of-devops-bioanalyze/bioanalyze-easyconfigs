@@ -12,6 +12,7 @@ homepage = 'https://ambermd.org/amber.html'
 description = """Amber (originally Assisted Model Building with Energy Refinement) is software for performing
  molecular dynamics and structure prediction."""
 
+toolchain = SYSTEM
 #toolchain = {'name': 'foss', 'version': '2021b'}
 #toolchainopts = {'usempi': True, 'openmp': True}
 
