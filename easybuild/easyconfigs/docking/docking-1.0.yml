@@ -1,0 +1,27 @@
+name: docking
+channels:
+  - conda-forge
+  - schrodinger
+  - bioconda
+  - defaults
+dependencies:
+  - python
+  - ipykernel
+  - ipython
+  - openbabel=3.1.1
+  - rdkit
+  - mdanalysis=2.4.2
+  - smina
+  - pymol-bundle
+  - papermill
+  - numpy
+  - pandas
+  - seaborn
+  - pip:
+      - PyQt5
+      - "ray[default]"
+      - "ray[tune]"
+      - "ray[serve]"
+      - "modin[all]"
+
+
