@@ -25,5 +25,5 @@ dependencies:
   - nb_conda
   - ffmpeg
   - pip:
-    - "deeplabcut[gui,tf]==2.3"
+      - "deeplabcut[gui,tf,modelzoo]==2.3"
 
