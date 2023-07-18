@@ -1,0 +1,12 @@
+name: ray 
+channels:
+  - conda-forge
+dependencies:
+- pip
+- ray-default=2.5.1
+- "ray-air"    # installs Ray + dependencies for Ray AI Runtime
+- "ray-tune"   # installs Ray + dependencies for Ray Tune
+- "ray-rllib"  # installs Ray + dependencies for Ray RLlib
+- "ray-serve"
+- pyarrow
+

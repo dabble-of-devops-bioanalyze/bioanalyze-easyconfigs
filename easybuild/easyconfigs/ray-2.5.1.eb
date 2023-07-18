@@ -1,0 +1,19 @@
+
+easyblock = 'Conda'
+
+name = 'ray'
+version = '2.5.1'
+
+homepage = 'https://docs.ray.io/en/latest/ray-observability/index.html'
+description = """Ray is an open-source unified framework for scaling AI and Python applications like machine learning. It provides the compute layer for parallel processing so that you don’t need to be a distributed systems expert. """
+
+toolchain = SYSTEM
+
+builddependencies = [('Miniconda3', '4.12.0')]
+sources = ["%(namelower)s-%(version)s.yml"]
+environment_file = "%(namelower)s-%(version)s.yml"
+
+sanity_check_commands = ['python --version']
+
+moduleclass = 'tools'
+

@@ -1,0 +1,11 @@
+name: dask 
+channels:
+  - conda-forge
+dependencies:
+- pip
+- dask=2023.7.0
+- dask-core
+- dask-ml
+- pyarrow
+- ipykernel
+- ipython
