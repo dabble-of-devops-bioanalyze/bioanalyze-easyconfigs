@@ -1,0 +1,31 @@
+name: jupyterlab
+channels:
+  - conda-forge
+dependencies:
+  - pangeo-notebook=2023.07.10
+  - dask-gateway-server-jobqueue
+  - jupyterhub
+  - jupyterlab
+  - bash_kernel
+  - r-ikernel
+  - jupyter-rsession-proxy
+  - scikit-image
+  - scikit-learn
+  - seaborn
+  - nodejs
+  - cdsdashboards
+  - cdsdashboards-singleuser
+  - panel
+  - dash
+  - plotly 
+  - jupyter-dash
+  - voila
+  - pip
+  - pip:
+      - batchspawner
+      - aws-parallelcluster==3.3.1
+      - aws-pcluster-helpers
+      - aws-pcluster-slurm-spawner
+      - aws-pcluster-dask-gateway
+      - jupyter-dcv-proxy
+      - jupyter-containds
