@@ -7,7 +7,7 @@ dependencies:
   - jupyterhub
   - jupyterlab
   - bash_kernel
-  - r-ikernel
+  - r-irkernel
   - jupyter-rsession-proxy
   - scikit-image
   - scikit-learn
