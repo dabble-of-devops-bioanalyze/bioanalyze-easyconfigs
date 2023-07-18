@@ -3,9 +3,10 @@ easyblock = 'Conda'
 
 name = 'jupyterlab'
 version = '2022.05.10'
+version = '2023.07.10'
 
 homepage = 'https://github.com/pangeo-data'
-description = "Jupyterlab : Pangeo 2022.05.10"
+description = "Jupyterlab"
 toolchain = SYSTEM
 
 environment_file = "%(namelower)s-%(version)s.yml"
