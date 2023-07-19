@@ -3,7 +3,7 @@ channels:
   - conda-forge
 dependencies:
   - pangeo-notebook=2023.07.10
-  - dask-gateway-server-jobqueue
+  #- dask-gateway-server-jobqueue
   - jupyterhub
   - jupyterlab
   - bash_kernel
@@ -24,8 +24,8 @@ dependencies:
   - pip:
       - batchspawner
       - aws-parallelcluster==3.3.1
-      - aws-pcluster-helpers
-      - aws-pcluster-slurm-spawner
-      - aws-pcluster-dask-gateway
+      #- aws-pcluster-helpers
+      #- aws-pcluster-slurm-spawner
+      #- aws-pcluster-dask-gateway
       - jupyter-dcv-proxy
       - jupyter-containds
