@@ -2,7 +2,7 @@
 easyblock = 'Conda'
 
 name = 'jupyterlab'
-version = '2022.09.17'
+version = '2023.09.17'
 
 homepage = 'https://github.com/pangeo-data'
 description = "Jupyterlab"
