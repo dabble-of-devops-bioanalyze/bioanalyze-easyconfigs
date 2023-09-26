@@ -7,7 +7,6 @@ dependencies:
   - jupyterlab
   - bash_kernel
   - r-irkernel
-  - jupyter-rsession-proxy
   - scikit-image
   - scikit-learn
   - seaborn
@@ -22,10 +21,8 @@ dependencies:
   - pip
   - pip:
       - batchspawner
-      - aws-parallelcluster==3.3.1
+      - aws-parallelcluster==3.5.0
       - aws-pcluster-helpers
       - aws-pcluster-slurm-spawner
       - aws-pcluster-dask-gateway
       - jupyter-dcv-proxy
-      - jupyter-containds
-      - dask-gateway-server[jobqueue]
