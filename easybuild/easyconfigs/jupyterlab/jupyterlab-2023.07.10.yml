@@ -2,6 +2,7 @@ name: jupyterlab
 channels:
   - conda-forge
 dependencies:
+  - python=3.9
   - pangeo-notebook=2023.07.10
   - jupyterhub
   - jupyterlab
