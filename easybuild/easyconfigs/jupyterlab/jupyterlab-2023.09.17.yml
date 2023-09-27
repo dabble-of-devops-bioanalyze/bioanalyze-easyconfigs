@@ -23,8 +23,8 @@ dependencies:
   - pip:
       - batchspawner
       - aws-parallelcluster==3.5.0
-      - aws-pcluster-helpers
-      - aws-pcluster-slurm-spawner
-      - aws-pcluster-dask-gateway
+      - aws-pcluster-helpers>3.5
+      - aws-pcluster-slurm-spawner>3.5
+      - aws-pcluster-dask-gateway>3.5
       - jupyter-dcv-proxy
       - jupyter-containds
