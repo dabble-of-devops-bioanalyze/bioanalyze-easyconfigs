@@ -21,8 +21,8 @@ dependencies:
   - voila
   - pip
   - pip:
+      # make sure to use this commit - 92606b9933d81605e44665cdc1b646b37b41f95b
       - git+https://github.com/jupyterhub/batchspawner.git@main
-      #      - batchspawner
       - aws-parallelcluster==3.5.0
       - aws-pcluster-helpers>3.5
       - aws-pcluster-slurm-spawner>3.5
