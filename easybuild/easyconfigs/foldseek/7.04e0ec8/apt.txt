@@ -1,0 +1,5 @@
+bzip2
+unzip
+tar
+rsync
+build-essential

@@ -1,0 +1,26 @@
+easyblock = 'Conda'
+
+name = 'protoms'
+version = '3.4'
+
+homepage = 'https://github.com/essex-lab/ProtoMS'
+description = """Protoms"""
+
+toolchain = SYSTEM
+
+builddependencies = [('Miniconda3', '4.12.0')]
+sources = ["%(namelower)s-%(version)s.yml", "install-%(namelower)s-%(version)s.sh"]
+environment_file = "environment.yml"
+
+sanity_check_commands = ['python --version']
+
+postinstallcmds = [
+"""
+export INSTALLDIR=%(installdir)s && \
+export BUILDDIR=%(builddir)s && \
+chmod 777 *sh && \
+bash ./install-%(namelower)s-%(version)s.sh
+"""
+]
+
+moduleclass = 'bio'

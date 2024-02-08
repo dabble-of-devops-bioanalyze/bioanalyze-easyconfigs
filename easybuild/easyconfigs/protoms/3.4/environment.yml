@@ -1,0 +1,25 @@
+name: protoms
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+dependencies:
+  - python=3.9
+  - compilers
+  - fortran-compiler
+  - click
+  - typer
+  - pydantic
+  - rich-click
+  - cython
+  - ipython
+  - ipykernel
+  - pandas
+  - seaborn
+  - bash_kernel
+  - matplotlib
+  - numpy
+  - scipy
+  - ambertools
+  - pymbar
+  - pip

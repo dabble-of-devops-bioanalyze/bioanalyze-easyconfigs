@@ -1,0 +1,17 @@
+
+easyblock = 'Conda'
+
+name = 'scanpy'
+version = '1.9.1'
+homepage = 'https://scanpy.readthedocs.io/en/stable/'
+
+description = "Scanpy – Single-Cell Analysis in Python"
+toolchain = SYSTEM
+
+environment_file = "environment.yml"
+sources = ["%(namelower)s-%(version)s.yml"]
+sanity_check_commands = ['python --version']
+
+builddependencies = [('Miniconda3', '4.12.0')]
+
+moduleclass = 'bio'

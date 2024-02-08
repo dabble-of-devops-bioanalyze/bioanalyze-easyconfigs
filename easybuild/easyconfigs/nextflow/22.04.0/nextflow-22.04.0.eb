@@ -1,0 +1,23 @@
+
+easyblock = 'Conda'
+
+name = 'nextflow'
+version = '22.04.0'
+
+homepage = 'https://www.nextflow.io/'
+description = """Data-driven computational pipelines
+
+Nextflow enables scalable and reproducible scientific workflows using software containers. It allows the adaptation of pipelines written in the most common scripting languages.
+
+Its fluent DSL simplifies the implementation and the deployment of complex parallel and reactive workflows on clouds and clusters.
+"""
+
+toolchain = SYSTEM
+
+builddependencies = [('Miniconda3', '4.12.0')]
+sources = ["%(namelower)s-%(version)s.yml"]
+environment_file = "environment.yml"
+
+sanity_check_commands = ['python --version']
+
+moduleclass = 'tools'

@@ -1,0 +1,17 @@
+
+easyblock = 'Conda'
+
+name = 'jupyterlab'
+version = '2022.05.10'
+
+homepage = 'https://github.com/pangeo-data'
+description = "Jupyterlab : Pangeo 2022.05.10"
+toolchain = SYSTEM
+
+environment_file = "environment.yml"
+sources = ["%(namelower)s-%(version)s.yml"]
+sanity_check_commands = ['python --version']
+
+builddependencies = [('Miniconda3', '4.12.0')]
+
+moduleclass = 'bio'

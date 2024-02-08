@@ -1,0 +1,9 @@
+name: notebook
+channels:
+  - conda-forge
+dependencies:
+  - python=3.9
+  - xarray
+  - typer
+  - scanpy=1.9.1
+  - pip

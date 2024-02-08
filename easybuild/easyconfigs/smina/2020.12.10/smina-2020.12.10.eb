@@ -1,0 +1,16 @@
+easyblock = 'Conda'
+
+name = 'smina'
+version = '2020.12.10'
+
+homepage = 'https://sourceforge.net/projects/smina/'
+description = "A fork of AutoDock Vina that is customized to better support scoring function development and high-performance energy minimization."
+toolchain = SYSTEM
+
+builddependencies = [('Miniconda3', '4.12.0')]
+
+environment_file = "environment.yml"
+sources = ["%(namelower)s-%(version)s.yml"]
+sanity_check_commands = ['python --version']
+
+moduleclass = 'bio'

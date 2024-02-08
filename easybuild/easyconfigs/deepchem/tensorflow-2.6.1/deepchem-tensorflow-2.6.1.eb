@@ -1,0 +1,18 @@
+
+easyblock = 'Conda'
+
+name = 'deepchem-tensorflow'
+version = '2.6.1'
+
+homepage = 'https://github.com/deepchem/deepchem'
+description = """DeepChem aims to provide a high quality open-source toolchain that democratizes the use of deep-learning in drug discovery, materials science, quantum chemistry, and biology."""
+
+toolchain = SYSTEM
+
+builddependencies = [('Miniconda3', '4.12.0')]
+sources = ["%(namelower)s-%(version)s.yml"]
+environment_file = "environment.yml"
+
+sanity_check_commands = ['python --version']
+
+moduleclass = 'bio'

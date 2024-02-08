@@ -1,0 +1,18 @@
+
+easyblock = 'Conda'
+
+name = 'EasyBuild'
+version = '4.5.4'
+
+homepage = 'https://easybuild.io'
+description = """EasyBuild is a software build and installation framework that allows you to manage (scientific) software on High Performance Computing (HPC) systems in an efficient way."""
+
+toolchain = SYSTEM
+
+builddependencies = [('Miniconda3', '4.12.0')]
+sources = ["%(namelower)s-%(version)s.yml"]
+environment_file = "environment.yml"
+
+sanity_check_commands = ['python --version']
+
+moduleclass = 'tools'
