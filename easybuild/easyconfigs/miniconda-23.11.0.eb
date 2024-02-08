@@ -23,4 +23,9 @@ postinstallcmds = [
     "%(installdir)s/bin/conda config --set channel_priority strict",
 ]
 
+sanity_check_paths = {
+    'files': [],
+    'dirs': ['bin'],
+}
+
 moduleclass = 'lang'
